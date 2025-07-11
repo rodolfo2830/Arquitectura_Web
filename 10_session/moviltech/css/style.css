@@ -1,0 +1,86 @@
+ /* Asignando valores para el contenido de la página */
+ body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     background: #f4f4f4;
+ }
+
+ /* Personalizando el encabezado */
+ header {
+     background-color: #0a3d62;
+     color: white;
+     text-align: center;
+     padding: 2rem;
+     animation: aparecerDesdeArriba 1s ease-out;
+ }
+
+  /* Definimos la animación */
+ @keyframes aparecerDesdeArriba {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+ }
+
+  /* Definimos los estilos de la sección vehículos */
+ .vehiculos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+ }
+
+  /* Definimos el estilo de cada card */
+ .card {
+    width: calc(33.33% - 2rem);
+    min-width: 250px; /* nunca más pequeño de 250px */
+    max-width: 100%;  /* no se pase del contenedor */
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+ }
+
+  /* Definimos la transformación del card al pasar el mouse */
+ .card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+ }
+
+  /* Pulimos la presentación de las imágenes */
+ .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+ }
+
+  /* Definimos la transformación del card */
+ .card:hover img {
+    transform: scale(1.1);
+ }
+
+  /* Aplicaremos pading al contenido (textos) */
+ .card .contenido {
+    padding: 1rem;
+ }
+
+  /* Ahora trabajaremos en el botón */
+  .boton {
+    display: inline-block;
+    background-color: #27ae60;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+ }
+
+  /* Definmos transformación en los botones */
+ .boton:hover {
+    background-color: #b91004;
+    transform: scale(1.05);
+ }

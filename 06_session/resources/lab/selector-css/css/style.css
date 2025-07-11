@@ -1,0 +1,51 @@
+/* Selecciona todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Selector de elementos HTML */
+body {
+    background-color: #daeafd;
+    margin: 30px;
+}
+
+h1 {
+    color: #95f19c;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #CB0404;
+    padding-top: 30px;
+}
+
+ul li {
+    margin: 0 40px 0 ;
+}
+
+h3 {
+    color: #0c0991;
+    padding-top: 45px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* El punto (.) indica que es una clase */
+.cta-button {
+    background-color: #CB0404;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+}
+
+/* El numeral (#) indica que es un ID */
+#hero-section {
+    background-color: #0c0991;
+    padding: 60px 30px;
+    border-radius: 40px;
+}

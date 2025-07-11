@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f7e8a6;
+}
+
+h3 {
+    color: red;
+}
+
+.animation {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.animation .box {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: #12025a;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+}
+
+/* Definiendo la acción de la animación */
+@keyframes cambiarColor {
+    from { background-color: #12025a; }
+    to { background-color: rgb(185, 47, 4);}
+}
+
+/* Ejecutando la animación definida */
+.animacion-color {
+    animation: cambiarColor 0.3s infinite;
+}

@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #a4e7c8;
+}
+
+h3 {
+    color: #d40404;
+}
+
+.transition {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem; 
+}
+
+.transition .btn-suave {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-suave:hover {
+    background-color: #2ecc71;
+    color: black;
+}

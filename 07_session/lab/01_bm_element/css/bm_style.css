@@ -1,0 +1,16 @@
+
+body {
+    margin: 0;
+}
+
+div {
+    box-sizing: border-box;
+    display: block;
+    background-color: aquamarine;
+    font-size: 60px;
+    padding: 65px;
+    margin: 15px;
+    border: 30px solid #2D4F2B;
+    width: min-content;
+    height: max-content;
+}

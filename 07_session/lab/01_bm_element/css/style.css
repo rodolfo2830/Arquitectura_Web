@@ -1,0 +1,11 @@
+
+.caja-basica {
+    /* top | left and right | bottom */
+    margin: 20px;
+    border: 15px solid #0B1D51;
+    /* top | left and right | bottom */
+    padding: 60px;
+    background-color: #FCEF91;
+    width: 200px;
+    height: 200px;
+}

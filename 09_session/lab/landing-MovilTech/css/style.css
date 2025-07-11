@@ -1,0 +1,121 @@
+/* Definimos los estilos globales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Header con imagen de fondo */
+.hero {
+    background-image: url('/image/banner-moviltech.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 12rem 3rem;
+    position: relative;
+}
+
+/* Panel de sombra azul en el banner */
+.hero .overlay {
+    background-color: #0e2148a2;
+    padding: 6rem;
+    border-radius: 10px;
+}
+
+/* Navegación */
+nav {
+    background-color: #021552;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 1rem; /* 1rem = 16px */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+nav a:hover{
+    background-color: yellow;
+    color: black;
+}
+
+/* Trabajando en la etiqueta Main */
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.galeria-autos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+/* Empezamos a trabajar en los card */
+
+.galeria-autos .card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgb(190, 189, 189);
+    transition: transform 0.2s ease;
+}
+
+.galeria-autos .card:hover {
+    transform: translate(-5px);
+}
+
+/* Trabajando en las imágenes de los carros */
+.galeria-autos .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Trabajando en el panel promociones */
+
+aside {
+    background-color: aliceblue;
+    padding: 1rem;
+    border-left: 5px solid blue;
+    border-radius: 8px;
+}
+
+/* Trabajando en la sección financiamiento */
+
+#financiamiento {
+    background-color: bisque;
+    border-left: 5px solid brown;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px #021552;
+    margin-top: 2rem;
+}
+
+/* Trabajando en el footer */
+
+footer {
+    background-color: #021552;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
